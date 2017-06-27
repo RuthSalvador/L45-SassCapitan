@@ -1,0 +1,12 @@
+$color-principal: #ebb85d;
+$color-secondary: #3e3f40;
+
+.color-active, .title{
+  background: $color-principal;
+  color: #ffffff;
+}
+
+.color-inactive, .foot {
+  background: $color-secondary;
+  color: #ffffff;
+}

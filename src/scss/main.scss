@@ -1,0 +1,32 @@
+@import "colors";
+@import "fonts";
+@import "resolutions";
+
+.title {
+  padding: 14px 7px;
+}
+
+ul {
+  ;
+  li {
+    margin: 3.5px;
+    padding: 3.5px;
+  }
+}
+
+.aside  {
+  padding: 14px;
+  text-align: center;
+  h2 {
+    padding: 7px;
+  }
+}
+
+.foot {
+  padding: 14px;
+  text-align: center;
+}
+
+.content {
+  padding: 14px;
+}

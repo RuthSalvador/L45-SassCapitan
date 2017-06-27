@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin grilla($column, $tamaño){
+  @media (min-width: $tamaño) {
+    display: inline-block;
+    width: ((100%/12)-0.1)*$column;
+  }
+}
+
+.small {
+  @include grilla(12, 0);
+}
+
+.medium {
+  .col-med-3 {
+    @include grilla(3, 728px);
+  }
+  .col-med-9 {
+    @include grilla(9, 728px);
+  }
+}
+
+.large {
+  .col-lar-3 {
+    @include grilla(3, 940px);
+  }
+  .col-lar-6 {
+    @include  grilla(6, 940px);
+  }
+}
