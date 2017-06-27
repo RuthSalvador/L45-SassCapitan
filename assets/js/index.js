@@ -22,13 +22,20 @@ const getJSON = (url, cb) => {
   xhr.send();
 };
 
+const render = (root) => {
+  root.append(Coders());
+};
+
 
 $( _ => {
 
   getJSON('http://laboratoria.cuadra.co:9339/api/v1/students/?format=json', (err, json) => {
     if (err) {
       return alert(err.message);
-      state.coders = json;
     }
+    state.coders = json;
+
+    const root = $('.root');
+    render(root);
   });
 });

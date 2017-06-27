@@ -7,7 +7,7 @@
 @mixin grilla($column, $tamaño){
   @media (min-width: $tamaño) {
     display: inline-block;
-    width: ((100%/12)-0.1)*$column;
+    width: ((100%/12))*$column;
   }
 }
 
@@ -17,18 +17,40 @@
 
 .medium {
   .col-med-3 {
-    @include grilla(3, 728px);
+    @include grilla(3, 768px);
   }
   .col-med-9 {
-    @include grilla(9, 728px);
+    @include grilla(9, 768px);
   }
 }
 
 .large {
   .col-lar-3 {
-    @include grilla(3, 940px);
+    @include grilla(3, 992px);
   }
   .col-lar-6 {
-    @include  grilla(6, 940px);
+    @include  grilla(6, 992px);
   }
 }
+
+// /*Grid Ely*/
+//
+//$columns : 12;
+//$column-width : 100%/$columns;
+//$breakpoints : (xs : 0, sm : 768px, md : 992px, lg : 1200px );
+//@function column-width($column){
+//  @return $column-width*$column;
+//}
+//@mixin column($media, $min-width){
+//  @media (min-width:$min-width){
+//    @for $i from 1 through $columns {
+//      .column-#{$media}-#{$i} {
+//        width: column-width($i);
+//      }
+//    }
+//  }
+//}
+//@each $name, $width in $breakpoints {
+//  @include column($name, $width);
+//}
+//
