@@ -6,7 +6,7 @@
 
 @mixin grilla($column, $tamaño){
   @media (min-width: $tamaño) {
-    display: inline-block;
+    float: left;
     width: ((100%/12))*$column;
   }
 }

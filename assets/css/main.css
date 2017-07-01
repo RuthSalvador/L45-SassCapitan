@@ -35,25 +35,25 @@ h2 {
 
 @media (min-width: 0) {
   .small {
-    display: inline-block;
+    float: left;
     width: 100%; } }
 
 @media (min-width: 768px) {
   .medium .col-med-3 {
-    display: inline-block;
+    float: left;
     width: 25%; } }
 @media (min-width: 768px) {
   .medium .col-med-9 {
-    display: inline-block;
+    float: left;
     width: 75%; } }
 
 @media (min-width: 992px) {
   .large .col-lar-3 {
-    display: inline-block;
+    float: left;
     width: 25%; } }
 @media (min-width: 992px) {
   .large .col-lar-6 {
-    display: inline-block;
+    float: left;
     width: 50%; } }
 
 .title {
